@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konversi-string-&-number</title>
+</head>
+<body>
+    <script>
+        const value1 = parseInt("1")
+        const value2 = 1
+        const sum = value1 + value2
+
+        document.writeln(`<p> ${sum} </p>`)
+
+        //mengkonversi string ke number(bilangan bulat) 
+        document.writeln(`<p> ${parseInt("1.2")} </p>`)
+
+        //mengkonversi string ke number(bilangan pecahan)
+        document.writeln(`<p> ${parseFloat("1.5")} </p>`)
+
+        //mengkonversi string ke number(bilangan bulat atau bilangan pecahan)
+        document.writeln(`<p> ${Number("1.1")} </p>`)
+
+        //mengkonversi dari number ke string
+        const a = 1
+        const b = 1
+        const total = a.toString() + b.toString()
+        document.writeln(`<p> ${total} </p>`)
+
+        //kode NaN
+        document.writeln(`<p> ${parseInt("salah")} </p>`) //NaN
+        document.writeln(`<p> ${parseFloat("1.1text")} </P>`) //1.1
+
+        //Number() tidak akan mentolelir kesalahan pada data
+        document.writeln(`<p> ${Number("1ups")} </p>`) //NaN
+        document.writeln(`<p> ${Number("1x")} </p>`) //NaN
+        document.writeln(`<p> ${Number("bukan nomer")} </p>`) // NaN
+
+        //jika Kode menghasilkan NaN ditambah dengan nomer akan tetap NaN
+        const hasil1 = Number("salah") //NaN
+        const hasil2 = Number(10)
+        const tambah = hasil1 + hasil2 //NaN
+
+        document.writeln(`<p> ${tambah} </p>`)
+
+        //
+        document.writeln(`<p> ${isNaN("first")} </p>`)
+        document.writeln(`<p> ${isNaN(100)} </P>`)
+        document.writeln(`<p> ${isNaN("NaN")} </p>`)
+    </script>
+</body>
+</html>

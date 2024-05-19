@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if expression</title>
+</head>
+<body>
+    <script>
+        //if expression
+            //jika nilai false tidak akan tampil
+        const nilai = 75
+        if (nilai > 70) { //hasil true
+            document.writeln("<h1> terbaik </h1>")
+        }
+        
+        //else expression
+        const nilaiSiswa = 80
+        if (nilaiSiswa >  90) { //false
+            document.writeln("<h2> terbaik </h2>")
+        } else {
+            document.writeln("<h2> coba lagi tahun depan </h2>")
+        }
+
+        //else if expreession
+        const examValue = 90
+
+        if (examValue > 100) { //false
+            document.writeln("<h3> bagus </h3>")
+        } else if(examValue > 180) { //false
+            document.writeln("<h3> lumayan </h3>")
+        } else {
+            document.writeln("<h3> coba lagi 5 tahun depan </h3>")
+        }
+
+        const result = 100
+
+        if (result > 110) {
+            document.writeln("<h3> bagus banget </h3>")
+        }
+        else if (result > 111) {
+            document.writeln("<h3> bagus </h3>")
+        }
+        else if (result > 189 ) {
+            document.writeln("<h3> lumayan </h3>")
+        }
+        else if (result > 60) {
+            document.writeln("<h3> tolol kamu </h3>")
+        }
+    </script>
+</body>
+</html>

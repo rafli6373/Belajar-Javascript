@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop confirm</title>
+</head>
+<body>
+    <script>
+        const masuk = confirm("anda yakin ingin masuk")
+
+        if(masuk) {
+            const nama = prompt("Siapa nama anda?")
+            const umur = prompt("berapa umur anda?")
+            const asal = prompt("dimana domisili anda")
+            alert(`hello ${nama}, umur anda ${umur}, asal anda ${asal}`)
+        } else {
+            alert ("selamat tinggal")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipe-data-array</title>
+</head>
+<body>
+    <script>
+        let arrayNama = [ "eko", "burhan", "khannedi", "adit"] 
+        document.writeln(`<p> ${arrayNama} </p>`)
+
+        let names = []
+        names.push("eko")
+        names.push("kurniawan", "kennedy")
+        names.push("budi", "aman", "bambang")
+        console.table(names)
+
+        names[0] = "ega"
+        names[1] = "detol"
+
+        delete names[3]
+        console.table(names)
+
+        names.push(1, 2, 3, 4)
+        names[3] = "diubah lagi"
+        names.push(["anindita", "keisha"])
+        console.table(names)
+    </script>
+</body>
+</html>

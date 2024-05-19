@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipe-data-object</title>
+</head>
+<body>
+    <script>
+        const orang = {}
+
+        //ubah property / atribute
+        orang["nama"] = "rafli hasyim"
+        orang["negara"] = "indonesia"
+        orang["umur"] = 100
+
+        console.table(orang)
+
+        delete orang["negara"]
+        console.table(orang)
+
+        //membuat object dgn properties
+        const person = {
+            nama: "anindita",
+            asal: "india",
+            umur: 50
+        }
+        console.table(person)
+
+        const murid = {
+           "nama lengkap": "ega",
+            asal: "singapura",
+            umur:20
+        }
+        console.info(`Nama : ${murid["nama lengkap"]}`)
+        console.info(`Asal : ${murid.asal}`)
+        console.info(`Umur : ${murid.umur}`)
+    </script>
+</body>
+</html>

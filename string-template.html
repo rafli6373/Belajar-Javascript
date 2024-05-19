@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string-template</title>
+</head>
+<body>
+    <script>
+         const name = "Rafli Hasyim"
+         const fullName = `Name: ${name}`
+
+         console.info(fullName)
+
+         const namaDepan = "ega"
+         const namaTengah = "Jismi"
+         const namaBelakang = "arifin"
+
+         console.info("name: " + ` ${namaDepan} ${namaTengah} ${namaBelakang}`)
+
+         //expression string 
+         const nama = "didim"
+         const nilai = 70
+
+         console.info(`nama saya ${nama}, nilai ${nilai > 80}`)
+
+         //multiline string
+         const multiline = `
+nama saya adalah Rafli,
+hobi saya berenang,
+umur saya 22 tahun
+         `
+         console.info(multiline)
+
+    </script>
+</body>
+</html>
