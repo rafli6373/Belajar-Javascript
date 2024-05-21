@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator ternary</title>
+</head>
+
+<body>
+    <script>
+        const nilai = 90
+        let ucapan;
+
+        if (nilai >= 80) {
+            ucapan = "selamat anda lulus"
+        } else {
+            ucapan = "maaf anda tidak lulus"
+        }
+        document.writeln(`<p> ${ucapan} </p>`)
+
+        //operator ternary
+        const ucapan2 = nilai >= 80 ? "selamat anda lulus" : "maaf anda tidak lulus"
+        document.writeln(`<p> ${ucapan2} </p>`)
+    </script>
+</body>
+
+</html>

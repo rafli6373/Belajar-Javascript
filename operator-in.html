@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator in</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            firstName: "Rafli",
+            lastName: "Hasyim"
+        }
+        if ("firstName" in person) {
+            alert(`hello ${person.firstName}`)
+        } else {
+            alert("hello")
+        }
+
+        //jika menggunakan undefined atau null akan mengahsilkan true (itu akan sangat bahaya)
+        const orang = {
+            namaDepan: "Rafli",
+            namaTengah: "Hasyim",
+            namaBelakang: undefined
+        }
+        if ("namaBelakang" in orang) {
+            alert(`hello ${orang.namaBelakang}`)
+        } else {
+            alert("hello")
+        }
+
+        const names = [null, undefined, "Rafli"]
+        const hasil = 0 in names
+        document.writeln(hasil)
+    </script>
+</body>
+
+</html>
